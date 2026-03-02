@@ -16,7 +16,7 @@ class manager extends employee {
         this.teamSize = teamSize;
     }
     describe() {
-        return `${super.describe()} and manages a team of ${this.teamSize} employees. in the ${this.department} department.`;
+        return `${super.describe()} and manages a team of ${this.teamSize} employees in the ${this.department} department.`;
     }
 }
 
@@ -31,5 +31,17 @@ console.log(mgr1.describe());
 const mgr2 = new manager("Rj", "Finance", 3);
 console.log(mgr2.describe());
 
-
-
+//step 5
+class company {
+    constructor(name) {
+        this.employees = [];
+    }
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+    listEmployees() {
+        for (const emp of this.employees) {
+        console.log(emp.describe());
+    }
+}
+}
