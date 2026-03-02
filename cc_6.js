@@ -19,3 +19,17 @@ class manager extends employee {
         return `${super.describe()} and manages a team of ${this.teamSize} employees. in the ${this.department} department.`;
     }
 }
+
+//step 4
+const emp1 = new employee("Aiden", "Finance");
+console.log(emp1.describe());
+const emp2 = new employee("Alex", "Marketing");
+console.log(emp2.describe());
+
+const mgr1 = new manager("Edo", "Engineering", 5);
+console.log(mgr1.describe());
+const mgr2 = new manager("Rj", "Finance", 3);
+console.log(mgr2.describe());
+
+
+
